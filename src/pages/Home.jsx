@@ -1,8 +1,11 @@
 import React from 'react'
+import GNavbar from '../components/GNavbar'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+        <GNavbar />
+    </div>
   )
 }
 
