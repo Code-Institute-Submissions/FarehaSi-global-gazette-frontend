@@ -3,7 +3,7 @@ import worldLogo from '../assets/img/earth.png';
 
 const GNavbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg px-4 navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg px-4 navbar-light bg-light border-bottom">
       <a className="navbar-brand" href="#">
         <img
           src={worldLogo}
