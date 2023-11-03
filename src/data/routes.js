@@ -1,6 +1,9 @@
 import Home from "../pages/Home";
 import Login from "../pages/Login";
+import Followers from "../pages/Profile/Followers";
 import Index from "../pages/Profile/Index";
+import LikedPosts from "../pages/Profile/LikedPosts";
+import MyPosts from "../pages/Profile/MyPosts";
 import Register from "../pages/Register";
 
 
@@ -27,6 +30,27 @@ const routes = [
         id: 4, 
         path: '/profile',
         element: Index,
+        isProtected: true
+    },
+    
+    {
+        id: 4, 
+        path: '/profile/followers',
+        element: Followers,
+        isProtected: true
+    },
+    
+    {
+        id: 4, 
+        path: '/profile/my-posts',
+        element: MyPosts,
+        isProtected: true
+    },
+    
+    {
+        id: 4, 
+        path: '/profile/liked-posts',
+        element: LikedPosts,
         isProtected: true
     },
 ];

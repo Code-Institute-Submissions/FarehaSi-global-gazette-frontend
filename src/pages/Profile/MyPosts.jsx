@@ -1,8 +1,11 @@
 import React from 'react'
+import AuthLayout from '../../layouts/AuthLayout'
 
 const MyPosts = () => {
   return (
-    <div>MyPosts</div>
+    <AuthLayout>
+        <h1>Posts</h1>
+    </AuthLayout>
   )
 }
 
