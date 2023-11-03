@@ -1,7 +1,7 @@
 import React from 'react'
 import GNavbar from '../components/GNavbar'
 
-const Guest = ({ children }) => {
+const GuestLayout = ({ children }) => {
   return (
     <div>
         <GNavbar/>
@@ -13,4 +13,4 @@ const Guest = ({ children }) => {
   )
 }
 
-export default Guest
+export default GuestLayout
