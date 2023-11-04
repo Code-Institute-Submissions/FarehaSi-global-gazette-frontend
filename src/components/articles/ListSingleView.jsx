@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ListSingleView = ({ author, title, snippet, date, likes, shares, tags, thumbnail }) => {
+const ListSingleView = ({ author, title, snippet, date, likes, shares, tags, thumbnail, comments }) => {
   return (
     <div className="container mt-5">
       <div className="row">
@@ -11,8 +11,9 @@ const ListSingleView = ({ author, title, snippet, date, likes, shares, tags, thu
           <div className="d-flex justify-content-between align-items-center mt-2">
             <span>{date}</span>
             <div>
-              <span className="mr-3">❤️ {likes}</span>
-              <span>🔄 {shares}</span>
+              <span className="pr-3">❤️ {likes}</span>
+              <span className="pr-3">🔄 {shares}</span>
+              <span>💬 {comments}</span>
             </div>
           </div>
           <div className="mt-2">
