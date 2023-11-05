@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import apiFetch from '../../../utils/api';
 
 
-const NewComment = ({ articleId }) => {
+const NewComment = ({ articleId, onCommentPosted }) => {
   const [commentText, setCommentText] = useState('');
+  
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -18,8 +19,10 @@ const NewComment = ({ articleId }) => {
           article: articleId
         }),
       });
-      console.log(response); 
-      setCommentText('');
+      if (response.id) {
+        setCommentText(''); 
+        onCommentPosted(); 
+      }
     } catch (error) {
       console.error('Error posting comment:', error);
     }

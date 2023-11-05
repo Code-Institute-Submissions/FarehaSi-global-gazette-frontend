@@ -11,6 +11,15 @@ const ArticleActions = ({ articleId, totalLikes, totalComments }) => {
     const [liked, setLiked] = useState(false);
     const [likes, setLikes] = useState(totalLikes); 
     const [isCommentsOpen, setCommentsOpen] = useState(false);
+    const [refreshComments, setRefreshComments] = useState(null);
+
+    const handleNewComment = () => {
+        if (refreshComments) {
+          refreshComments();
+        }
+    };
+    
+
 
     const toggleComments = () => {
         setCommentsOpen(!isCommentsOpen);
@@ -57,8 +66,8 @@ const ArticleActions = ({ articleId, totalLikes, totalComments }) => {
                 <FontAwesomeIcon icon={faArrowUpFromBracket} />
             </div>
             <Slideover isOpen={isCommentsOpen} onClose={() => setCommentsOpen(false)}>
-                <CommentsSection articleId={articleId} />
-                <NewComment articleId={articleId} />
+                <CommentsSection articleId={articleId} onNewComment={setRefreshComments}/>
+                <NewComment articleId={articleId} onCommentPosted={handleNewComment}  />
             </Slideover>
         </div>
     );
