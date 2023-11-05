@@ -17,6 +17,7 @@ const CommentsSection = ({ articleId, onCommentPosted }) => {
   useEffect(() => {
     fetchComments();
   }, [articleId, fetchComments]);
+  
   useEffect(() => {
     if (onCommentPosted) {
       fetchComments();
