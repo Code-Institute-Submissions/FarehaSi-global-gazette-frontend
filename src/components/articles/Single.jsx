@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { useQuery } from 'react-query';
 import apiFetch from '../../utils/api';
 import './articleSkeleton.css'
+import UserProfile from './UserProfile';
 
 
 const Single = ({ articleId }) => {
@@ -27,6 +28,7 @@ const Single = ({ articleId }) => {
           <article>
             <h1 className="mb-4">{article?.title}</h1>
             <span className='text-muted'>{article?.truncated_content}</span>
+            <UserProfile userId={article.author.id} datePosted={article.created_at}/>
             {article?.thumbnail && (
               <img src={article?.thumbnail} alt={article?.title} className="img-fluid rounded" />
             )}
