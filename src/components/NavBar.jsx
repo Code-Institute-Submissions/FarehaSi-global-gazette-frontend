@@ -1,16 +1,47 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import worldLogo from '../assets/img/earth.png';
 import { useAuth } from '../context/ReactQueryContext';
+import './Navbar.css'
 
 const NavBar = () => {
   const { isAuthenticated, logout } = useAuth();
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [navVisible, setNavVisible] = useState(true);
 
   const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
+  const controlNavbar = () => {
+    if (typeof window !== 'undefined') {
+      // Check the current scroll position compared to the last scroll position
+      if (window.scrollY > lastScrollY && window.scrollY > 50) { // Check if user scrolled more than 50px
+        setNavVisible(false); // Hide the navbar
+      } else {
+        setNavVisible(true); // Show the navbar
+      }
+      // Update the last scroll position to the current scroll position
+      setLastScrollY(window.scrollY);
+    }
+  };
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      window.addEventListener('scroll', controlNavbar);
+
+      // Return a cleanup function to remove the event listener
+      return () => {
+        window.removeEventListener('scroll', controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
+
   return (
-    <nav className="navbar sticky-top navbar-expand-lg px-4 navbar-light bg-light border-bottom">
+    <nav
+      className={`navbar sticky-top navbar-expand-lg px-4 navbar-light bg-light border-bottom ${
+        !navVisible ? 'hide-nav' : ''
+      }`}
+    >
       <Link className="navbar-brand" to="/">
         <img
           src={worldLogo}
@@ -50,7 +81,7 @@ const NavBar = () => {
           ) : (
             <>
               <li className="nav-item">
-                <Link className="nav-link" to="#mission">Our Mission & Community</Link>
+                <Link className="nav-link" to="/our_mission">Our Mission & Community</Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/register">Sign Up</Link>
