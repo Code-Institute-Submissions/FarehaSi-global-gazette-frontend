@@ -1,12 +1,12 @@
 import React from 'react'
-import GNavbar from '../components/GNavbar'
 import Hero from '../components/home/Hero'
 import Articles from '../components/articles/Articles'
+import NavBar from '../components/NavBar'
 
 const Home = () => {
   return (
     <div>
-        <GNavbar />
+        <NavBar />
         <Hero />
         <Articles />
     </div>

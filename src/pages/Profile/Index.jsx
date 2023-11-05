@@ -1,5 +1,5 @@
 import React from 'react'
-import AuthLayout from '../../layouts/AuthLayout'
+import AuthLayout from '../../layouts/Layout'
 import Profile from '../../components/Profile/Profile'
 
 const Index = () => {
