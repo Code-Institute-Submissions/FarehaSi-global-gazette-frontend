@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpFromBracket, faComment, faHandsClapping } from '@fortawesome/free-solid-svg-icons';
 import './ArticleActions.css';
 import Slideover from '../Slideover';
+import CommentsSection from './comments/CommentsSection';
 
 const ArticleActions = ({ articleId, totalLikes, totalComments }) => {
     const [liked, setLiked] = useState(false);
@@ -55,7 +56,7 @@ const ArticleActions = ({ articleId, totalLikes, totalComments }) => {
                 <FontAwesomeIcon icon={faArrowUpFromBracket} />
             </div>
             <Slideover isOpen={isCommentsOpen} onClose={() => setCommentsOpen(false)}>
-                <h1>Hello</h1>
+                <CommentsSection articleId={articleId} />
             </Slideover>
         </div>
     );

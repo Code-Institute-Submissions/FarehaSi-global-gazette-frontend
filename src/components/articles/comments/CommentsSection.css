@@ -1,0 +1,25 @@
+.media {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .media-body h5 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .comment-actions {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .comment-like,
+  .comment-dislike {
+    margin-right: 15px;
+    cursor: pointer;
+  }
+  
+  .comment-like:hover,
+  .comment-dislike:hover {
+    text-decoration: underline;
+  }
