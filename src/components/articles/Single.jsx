@@ -30,7 +30,7 @@ const Single = ({ articleId }) => {
             <h1 className="mb-4">{article?.title}</h1>
             <span className='text-muted'>{article?.truncated_content}</span>
             <UserProfile userId={article.author.id} datePosted={article.created_at}/>
-            <ArticleActions articleId={article.id} totalComments={article.like_count} totalLikes={article.comment_count}/>
+            <ArticleActions articleId={article.id} totalComments={article.comment_count} totalLikes={article.like_count}/>
             {article?.thumbnail && (
               <img src={article?.thumbnail} alt={article?.title} className="img-fluid rounded" />
             )}
