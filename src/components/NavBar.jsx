@@ -1,27 +1,39 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import worldLogo from '../assets/img/earth.png';
 import { useAuth } from '../context/ReactQueryContext';
 
 const NavBar = () => {
   const { isAuthenticated, logout } = useAuth();
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
   return (
-    <nav className="sticky-top navbar navbar-expand-lg px-4 navbar-light bg-light border-bottom">
+    <nav className="navbar sticky-top navbar-expand-lg px-4 navbar-light bg-light border-bottom">
       <Link className="navbar-brand" to="/">
         <img
           src={worldLogo}
           width="30"
           height="30"
-          alt="Global Gazette Logo"
           className="d-inline-block align-top"
+          alt="Global Gazette Logo"
         />
         Global Gazette
       </Link>
-      <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded={!isNavCollapsed ? true : false}
+        aria-label="Toggle navigation"
+        onClick={handleNavCollapse}
+      >
         <span className="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <div className={`${isNavCollapsed ? 'collapse' : ''} navbar-collapse justify-content-end`} id="navbarNav">
         <ul className="navbar-nav">
           {isAuthenticated ? (
             <>
