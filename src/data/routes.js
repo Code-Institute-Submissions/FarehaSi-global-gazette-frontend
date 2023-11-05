@@ -1,3 +1,4 @@
+import SingleArticle from "../pages/Articles/SingleArticle";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import Followers from "../pages/Profile/Followers";
@@ -51,6 +52,13 @@ const routes = [
         id: 4, 
         path: '/profile/liked-posts',
         element: LikedPosts,
+        isProtected: true
+    },
+    
+    {
+        id: 5, 
+        path: '/articles/:articleId',
+        element: SingleArticle,
         isProtected: true
     },
 ];

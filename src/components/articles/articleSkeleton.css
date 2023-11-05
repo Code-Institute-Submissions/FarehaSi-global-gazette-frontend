@@ -1,0 +1,50 @@
+.skeleton-loader {
+    margin-top: 20px;
+  }
+  
+  .animated-background {
+    background-color: #ddd;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .skeleton-title {
+    height: 2rem;
+    width: 70%;
+    border-radius: 4px;
+  }
+  
+  .skeleton-img {
+    height: 200px;
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .skeleton-text {
+    height: 1rem;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 3px;
+  }
+  
+  .animated-background .skeleton-title,
+  .animated-background .skeleton-img,
+  .animated-background .skeleton-text {
+    background: linear-gradient(to right, #eeeeee 8%, #dddddd 18%, #eeeeee 33%);
+    background-size: 800px 104px;
+    position: relative;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes placeHolderShimmer {
+    0% {
+      background-position: -468px 0;
+    }
+    100% {
+      background-position: 468px 0;
+    }
+  }
