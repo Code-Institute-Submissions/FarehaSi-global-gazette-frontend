@@ -5,6 +5,7 @@ import { faArrowUpFromBracket, faComment, faHandsClapping } from '@fortawesome/f
 import './ArticleActions.css';
 import Slideover from '../Slideover';
 import CommentsSection from './comments/CommentsSection';
+import NewComment from './comments/NewComment';
 
 const ArticleActions = ({ articleId, totalLikes, totalComments }) => {
     const [liked, setLiked] = useState(false);
@@ -57,6 +58,7 @@ const ArticleActions = ({ articleId, totalLikes, totalComments }) => {
             </div>
             <Slideover isOpen={isCommentsOpen} onClose={() => setCommentsOpen(false)}>
                 <CommentsSection articleId={articleId} />
+                <NewComment articleId={articleId} />
             </Slideover>
         </div>
     );
