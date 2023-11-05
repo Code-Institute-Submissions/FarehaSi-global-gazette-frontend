@@ -1,10 +1,11 @@
 import React from 'react'
-import AuthNavbar from '../components/AuthNavbar'
+import Navigation from '../components/Profile/Navigation'
+import Navbar from '../components/NavBar'
 
 const AuthLayout = ({ children }) => {
   return (
     <div>
-        <AuthNavbar />
+        <Navbar />
         <div className='mt-5'>
             {children}
         </div>

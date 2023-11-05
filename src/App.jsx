@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import { useAuth } from './context/ReactQueryContext';
 import AuthWrapper from './hoc/AuthWrapper';
 import routes from './data/routes';
+import RedirectOnAuthChange from './context/RedirectOnAuthChange';
 
 const App = () => {
     const { isLoading } = useAuth();

@@ -1,0 +1,32 @@
+.action-bar {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 15px;
+  }
+  
+  .action-item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: #6c757d;
+    cursor: pointer; 
+  }
+  
+  .action-item:last-child {
+    margin-right: 0; 
+  }
+  
+  .action-count {
+    margin-left: 5px; 
+  }
+  
+  .action-item:hover .faHandsClapping,
+  .action-item:hover .faComment,
+  .action-item:hover .faArrowUpFromBracket {
+    color: #000; 
+  }
+
+  .liked {
+    color: #ff4500;
+  }
+  

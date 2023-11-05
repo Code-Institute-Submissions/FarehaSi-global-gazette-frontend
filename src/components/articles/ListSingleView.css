@@ -1,0 +1,47 @@
+.article-link {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .article-link:hover,
+  .article-link:focus {
+    text-decoration: none; 
+  }
+  
+  .article-link .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  
+  .article-link .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .article-link .img-thumbnail {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border: none; 
+  }
+  
+  .article-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .article-badge {
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.25rem;
+    padding: 0.25em 0.6em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    display: inline-block;
+  }
+  

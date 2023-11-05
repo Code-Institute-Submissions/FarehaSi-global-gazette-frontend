@@ -1,8 +1,11 @@
 import React from 'react'
+import AuthLayout from '../../layouts/Layout'
 
 const LikedPosts = () => {
   return (
-    <div>LikedPosts</div>
+    <AuthLayout>
+        <h1>Liked Posts</h1>
+    </AuthLayout>
   )
 }
 

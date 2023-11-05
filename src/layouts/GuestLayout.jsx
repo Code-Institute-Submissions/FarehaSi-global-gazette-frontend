@@ -1,10 +1,10 @@
 import React from 'react'
-import GNavbar from '../components/GNavbar'
+import NavBar from '../components/NavBar'
 
 const GuestLayout = ({ children }) => {
   return (
     <div>
-        <GNavbar/>
+        <NavBar/>
         <div className='mt-5'>
             {children}
         </div>

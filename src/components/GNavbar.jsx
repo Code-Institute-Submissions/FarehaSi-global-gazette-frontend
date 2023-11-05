@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const GNavbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg px-4 navbar-light bg-light border-bottom">
+    <nav className="sticky-top navbar navbar-expand-lg px-4 navbar-light bg-light border-bottom">
       <Link className="navbar-brand" to="/">
         <img
           src={worldLogo}
