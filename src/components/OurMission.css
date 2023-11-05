@@ -1,0 +1,31 @@
+.welcome, .mission, .features {
+    margin-bottom: 2rem;
+  }
+  
+  .welcome h1,
+  .mission h2,
+  .features h2 {
+    color: #333;
+  }
+  
+  .join {
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    padding: 2rem 0;
+  }
+  
+  .join .btn-primary {
+    background-color: #ff4500; 
+    border: none;
+  }
+  
+  .join h2 {
+    font-size: 1.5rem; 
+  }
+  
+  @media (max-width: 768px) {
+    .join h2 {
+      font-size: 1.25rem;
+    }
+  }
+  
