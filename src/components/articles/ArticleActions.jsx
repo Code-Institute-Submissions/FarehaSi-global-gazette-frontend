@@ -3,10 +3,16 @@ import apiFetch from '../../utils/api';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpFromBracket, faComment, faHandsClapping } from '@fortawesome/free-solid-svg-icons';
 import './ArticleActions.css';
+import Slideover from '../Slideover';
 
 const ArticleActions = ({ articleId, totalLikes, totalComments }) => {
     const [liked, setLiked] = useState(false);
     const [likes, setLikes] = useState(totalLikes); 
+    const [isCommentsOpen, setCommentsOpen] = useState(false);
+
+    const toggleComments = () => {
+        setCommentsOpen(!isCommentsOpen);
+    };
 
     useEffect(() => {
         setLikes(totalLikes);
@@ -39,7 +45,7 @@ const ArticleActions = ({ articleId, totalLikes, totalComments }) => {
                     <FontAwesomeIcon icon={faHandsClapping} className={likeIconClass} />
                     <span className="action-count">{likes}</span>
                 </div>
-                <div className="action-item">
+                <div className="action-item" onClick={toggleComments}>
                     <FontAwesomeIcon icon={faComment} />
                     <span className="action-count">{totalComments}</span>
                 </div>
@@ -48,6 +54,9 @@ const ArticleActions = ({ articleId, totalLikes, totalComments }) => {
             <div className="action-item">
                 <FontAwesomeIcon icon={faArrowUpFromBracket} />
             </div>
+            <Slideover isOpen={isCommentsOpen} onClose={() => setCommentsOpen(false)}>
+                <h1>Hello</h1>
+            </Slideover>
         </div>
     );
 };
