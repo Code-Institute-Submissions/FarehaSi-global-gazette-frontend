@@ -1,13 +1,14 @@
 import React from 'react'
 import GuestLayout from '../../layouts/GuestLayout'
 import Single from '../../components/articles/Single'
+import { useParams } from 'react-router-dom';
 
 const SingleArticle = () => {
-    const articleId = 1;
+    const { articleId } = useParams();
   return (
     <>
         <GuestLayout>
-            <Single articleId={1} />
+            <Single articleId={articleId} />
         </GuestLayout>
     </>
   )

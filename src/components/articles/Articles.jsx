@@ -86,6 +86,7 @@ const Articles = () => {
                                     {group.results.map(article => (
                                         <ListSingleView
                                             key={article.id}
+                                            articleId={article.id}
                                             author={article.author.username}
                                             title={article.title}
                                             snippet={article.truncated_content}

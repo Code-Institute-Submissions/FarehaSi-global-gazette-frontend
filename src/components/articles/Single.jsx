@@ -7,6 +7,7 @@ import ArticleActions from './ArticleActions';
 
 
 const Single = ({ articleId }) => {
+    
     const { data: article, error, isLoading } = useQuery(
         ['article', articleId],
         () => apiFetch(`/articles/${articleId}/`), 
