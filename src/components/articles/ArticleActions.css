@@ -25,4 +25,8 @@
   .action-item:hover .faArrowUpFromBracket {
     color: #000; 
   }
+
+  .liked {
+    color: #ff4500;
+  }
   

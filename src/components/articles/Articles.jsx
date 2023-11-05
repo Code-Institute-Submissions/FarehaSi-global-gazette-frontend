@@ -7,13 +7,13 @@ import Skeleton from './Skeleton';
 const fetchArticles = async ({ pageParam = 1, queryKey }) => {
     const [_key, searchTerm] = queryKey;
     const searchQueryParam = searchTerm ? `&search=${searchTerm}` : '';
-    const res = await apiFetch(`/articles/search/?page=${pageParam}${searchQueryParam}`);
+    const res = await apiFetch(`/articles/search/?page=${pageParam}${searchQueryParam}`, { method: 'GET' }, false);
     return res;
 };
 
 const fetchCategories = async () => {
-    const res = await apiFetch(`/categories`);
-    return res
+    const res = await apiFetch(`/categories`, { method: 'GET' }, false);
+    return res;
 };
 
 
