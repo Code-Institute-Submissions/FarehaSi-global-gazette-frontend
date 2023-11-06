@@ -4,11 +4,11 @@ import { Pagination } from 'react-bootstrap';
 import apiFetch from '../../utils/api';
 import ListSingleView from '../articles/ListSingleView';
 
-const MyOwnedPosts = () => {
+const AllLikedPosts = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const { isLoading, isError, error, data: articlesData } = useQuery(
     ['articles', currentPage], 
-    () => apiFetch(`/user/articles/?page=${currentPage}`, {
+    () => apiFetch(`/articles/liked/?page=${currentPage}`, {
       headers: {
         'Content-Type': 'application/json',
       },
@@ -62,4 +62,4 @@ const MyOwnedPosts = () => {
   );
 };
 
-export default MyOwnedPosts;
+export default AllLikedPosts;
