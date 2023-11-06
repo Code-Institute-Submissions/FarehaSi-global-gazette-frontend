@@ -1,13 +1,16 @@
 import React from 'react'
 import AuthLayout from '../../layouts/Layout'
 import Navigation from '../../components/Profile/Navigation'
+import UserFollowers from '../../components/Profile/Followings/UserFollowers'
+import UserFollowings from '../../components/Profile/Followings/UserFollowings'
 
 const Followers = () => {
   return (
     <AuthLayout>
       
       <Navigation />
-        <h1>Followers</h1>
+      <UserFollowings />
+      <UserFollowers />
     </AuthLayout>
   )
 }
