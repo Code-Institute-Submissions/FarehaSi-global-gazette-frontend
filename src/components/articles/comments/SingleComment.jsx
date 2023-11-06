@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './SingleComment.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faComment, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
+import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 import apiFetch from '../../../utils/api';
 import { faCommentDots } from '@fortawesome/free-regular-svg-icons';
 
