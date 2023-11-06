@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import apiFetch from '../../../utils/api';
-
-
+import './NewComment.css';
 const NewComment = ({ articleId, onCommentPosted }) => {
   const [commentText, setCommentText] = useState('');
-  
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -20,8 +18,8 @@ const NewComment = ({ articleId, onCommentPosted }) => {
         }),
       });
       if (response.id) {
-        setCommentText(''); 
-        onCommentPosted(); 
+        setCommentText('');
+        onCommentPosted();
       }
     } catch (error) {
       console.error('Error posting comment:', error);
@@ -31,17 +29,20 @@ const NewComment = ({ articleId, onCommentPosted }) => {
   return (
     <div className="new-comment-container">
       <form onSubmit={handleSubmit} className="comment-form">
-        <textarea
-          className="form-control"
-          placeholder="What are your thoughts?"
-          value={commentText}
-          onChange={(e) => setCommentText(e.target.value)}
-        />
-        <div className="submit-buttons">
-          <button type="button" className="cancel-button" onClick={() => setCommentText('')}>
+        <div className="mb-3">
+          <textarea
+            className="form-control"
+            placeholder="What are your thoughts?"
+            value={commentText}
+            onChange={(e) => setCommentText(e.target.value)}
+            rows="3"
+          ></textarea>
+        </div>
+        <div className="text-end">
+          <button type="button" className="btn btn-link text-muted me-2" onClick={() => setCommentText('')}>
             Cancel
           </button>
-          <button type="submit" className="respond-button">
+          <button type="submit" className="btn btn-success">
             Respond
           </button>
         </div>
