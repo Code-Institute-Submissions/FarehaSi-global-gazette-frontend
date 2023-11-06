@@ -3,10 +3,10 @@ import { useQuery } from 'react-query';
 import apiFetch from '../../../utils/api';
 import './UserFollowers.css';
 
-const UserFollowers = () => {
+const UserFollowings = () => {
   const { data: followers, isLoading, isError, error } = useQuery(
-    'userFollowers',
-    () => apiFetch('/auth/me/followers/')
+    'userFollowings',
+    () => apiFetch('/auth/me/following/')
   );
 
   if (isLoading) {
@@ -19,7 +19,7 @@ const UserFollowers = () => {
 
   return (
     <div className="container">
-      <h2 className="text-left mb-4">People who follow you::</h2>
+      <h2 className="text-left mb-4">Writers you follow:</h2>
       <div className="row">
         {followers.map((follower) => (
           <div key={follower.id} className="col-md-2 col-sm-6 mb-3">
@@ -38,4 +38,4 @@ const UserFollowers = () => {
   );
 };
 
-export default UserFollowers;
+export default UserFollowings;

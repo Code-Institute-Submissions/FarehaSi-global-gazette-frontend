@@ -1,0 +1,20 @@
+.follower-card {
+    /* border: 1px solid #ddd; */
+    border-radius: 4px;
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  
+  .follower-image {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+  }
+  
+  @media (max-width: 576px) {
+    .follower-image {
+      width: 75px;
+      height: 75px;
+    }
+  }
+  
