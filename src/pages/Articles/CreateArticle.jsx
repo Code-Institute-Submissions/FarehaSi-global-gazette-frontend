@@ -6,7 +6,8 @@ const CreateArticle = () => {
   return (
     <AuthLayout>
         <CreateNewArticle />
-    </AuthLayout>
+        
+        </AuthLayout>
   )
 }
 
