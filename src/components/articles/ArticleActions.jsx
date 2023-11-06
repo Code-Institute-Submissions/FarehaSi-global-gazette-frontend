@@ -66,8 +66,8 @@ const ArticleActions = ({ articleId, totalLikes, totalComments }) => {
                 <FontAwesomeIcon icon={faArrowUpFromBracket} />
             </div>
             <Slideover isOpen={isCommentsOpen} onClose={() => setCommentsOpen(false)}>
-                <CommentsSection articleId={articleId} onNewComment={setRefreshComments}/>
                 <NewComment articleId={articleId} onCommentPosted={handleNewComment}  />
+                <CommentsSection articleId={articleId} onNewComment={setRefreshComments}/>
             </Slideover>
         </div>
     );

@@ -1,0 +1,46 @@
+.new-comment-container {
+    padding: 4px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .comment-form textarea {
+    border: none;
+  }
+  
+  .comment-form textarea:focus {
+    box-shadow: none;
+    border-color: inherit;
+  }
+  
+  .submit-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+  }
+  
+  .cancel-button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #6c757d;
+  }
+  
+  .cancel-button:hover {
+    text-decoration: underline;
+  }
+  
+  .respond-button {
+    background-color: #198754; 
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-left: 8px;
+    border-radius: 5px;
+  }
+  
+  .respond-button:hover {
+    background-color: #157347;
+  }
+  

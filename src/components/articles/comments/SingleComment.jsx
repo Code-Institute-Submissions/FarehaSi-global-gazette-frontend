@@ -1,17 +1,34 @@
 import React from 'react';
-import './CommentsSection.css'; 
+import './SingleComment.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComment, faThumbsUp } from '@fortawesome/free-solid-svg-icons';
 
 const SingleComment = ({ comment }) => {
+  const avatarUrl = comment.userImage || `https://api.multiavatar.com/${encodeURIComponent(comment.username)}.svg`;
+
   return (
-    <div className="media mb-4">
-      <img src="user_avatar.png" alt="User Avatar" className="mr-3 mt-1 rounded-circle" style={{ width: '40px' }} />
+    <div className="media py-3">
       <div className="media-body">
-        <h5 className="mt-0">Username</h5> 
-        {comment.text}
-        <div className="comment-actions mt-2">
-          <span className="comment-like">{comment.like_count} Like</span>
-          <span className="comment-dislike">{comment.dislike_count} Dislike</span>
+        <div className="d-flex align-items-center">
+            <img 
+                src={avatarUrl} 
+                alt={`${comment.username}'s Avatar`} 
+                className="mr-3 rounded-circle" 
+                style={{ width: '28px', height: '28px' }} 
+            />
+            <span>Hero</span>
         </div>
+        <h5 className="mt-0 mb-1">{comment.username}</h5>
+        <p className="mb-2">{comment.text}</p>
+        <div className="comment-actions">
+          <span className="comment-like me-2">
+            <FontAwesomeIcon icon={faThumbsUp} /> {comment.like_count}
+          </span>
+          <span className="comment-reply">
+            <FontAwesomeIcon icon={faComment} /> Reply
+          </span>
+        </div>
+
       </div>
     </div>
   );
