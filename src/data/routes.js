@@ -1,3 +1,4 @@
+import CreateArticle from "../pages/Articles/CreateArticle";
 import SingleArticle from "../pages/Articles/SingleArticle";
 import Community from "../pages/Community";
 import Home from "../pages/Home";
@@ -62,11 +63,17 @@ const routes = [
         element: LikedPosts,
         isProtected: true
     },
-    
     {
         id: 8, 
         path: '/articles/:articleId',
         element: SingleArticle,
+        isProtected: true
+    },
+    
+    {
+        id: 9, 
+        path: '/articles/create',
+        element: CreateArticle,
         isProtected: true
     },
 ];
