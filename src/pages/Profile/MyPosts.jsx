@@ -1,12 +1,13 @@
 import React from 'react'
 import AuthLayout from '../../layouts/Layout'
 import Navigation from '../../components/Profile/Navigation'
+import MyOwnedPosts from '../../components/Profile/MyOwnedPosts'
 
 const MyPosts = () => {
   return (
     <AuthLayout>
         <Navigation />
-        <h1>Posts</h1>
+        <MyOwnedPosts />
     </AuthLayout>
   )
 }
