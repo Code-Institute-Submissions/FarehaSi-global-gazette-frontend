@@ -14,13 +14,11 @@ const NavBar = () => {
 
   const controlNavbar = () => {
     if (typeof window !== 'undefined') {
-      // Check the current scroll position compared to the last scroll position
-      if (window.scrollY > lastScrollY && window.scrollY > 50) { // Check if user scrolled more than 50px
-        setNavVisible(false); // Hide the navbar
+      if (window.scrollY > lastScrollY && window.scrollY > 50) { 
+        setNavVisible(false); 
       } else {
-        setNavVisible(true); // Show the navbar
+        setNavVisible(true);
       }
-      // Update the last scroll position to the current scroll position
       setLastScrollY(window.scrollY);
     }
   };
@@ -29,7 +27,6 @@ const NavBar = () => {
     if (typeof window !== 'undefined') {
       window.addEventListener('scroll', controlNavbar);
 
-      // Return a cleanup function to remove the event listener
       return () => {
         window.removeEventListener('scroll', controlNavbar);
       };
@@ -73,6 +70,10 @@ const NavBar = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/profile">My Profile</Link>
+              </li>
+              
+              <li className="nav-item">
+                <Link className="nav-link" to="/articles/create">Create new Post</Link>
               </li>
               <li className="nav-item">
                 <button className="nav-link btn btn-link" onClick={logout}>Logout</button>
