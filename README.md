@@ -7,7 +7,7 @@ The Global Gazette is committed to fostering a community where open and construc
 
 Our mission extends beyond mere communication; it is about building a foundation for stronger, more resilient global ties. It is about nurturing a place where memories are shared, where knowledge is exchanged, and where every voice can make an impact. Join us in our quest to keep the essence of community alive and vibrant, one story at a time.
 
-![Global Gazette Responsive Design Screenshot]([https://i.ibb.co/8PstHPP/image.pn](https://github.com/FarehaSi/global-gazette-frontend/blob/master/screenshots/mockup.jpg?raw=true))
+[![Global gazette](https://raw.githubusercontent.com/FarehaSi/global-gazette-frontend/master/screenshots/mockup.jpg?token=GHSAT0AAAAAACJGY4RAGNTSOGGDYWOT2NIGZKW7R7Q "Global gazette")](https://raw.githubusercontent.com/FarehaSi/global-gazette-frontend/master/screenshots/mockup.jpg?token=GHSAT0AAAAAACJGY4RAGNTSOGGDYWOT2NIGZKW7R7Q "Global gazette")
 
 Explore our platform, share your moments, and rediscover the world through the eyes of its citizens. This is Global Gazette – Where every story matters, and every voice counts.
 
