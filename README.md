@@ -7,7 +7,7 @@ The Global Gazette is committed to fostering a community where open and construc
 
 Our mission extends beyond mere communication; it is about building a foundation for stronger, more resilient global ties. It is about nurturing a place where memories are shared, where knowledge is exchanged, and where every voice can make an impact. Join us in our quest to keep the essence of community alive and vibrant, one story at a time.
 
-[![Global gazette](https://raw.githubusercontent.com/FarehaSi/global-gazette-frontend/master/screenshots/mockup.jpg?token=GHSAT0AAAAAACJGY4RAGNTSOGGDYWOT2NIGZKW7R7Q "Global gazette")](https://raw.githubusercontent.com/FarehaSi/global-gazette-frontend/master/screenshots/mockup.jpg?token=GHSAT0AAAAAACJGY4RAGNTSOGGDYWOT2NIGZKW7R7Q "Global gazette")
+[![Global gazette](./documentation/mockup.jpg "Global gazette")](./documentation/mockup.jpg "Global gazette")
 
 Explore our platform, share your moments, and rediscover the world through the eyes of its citizens. This is Global Gazette – Where every story matters, and every voice counts.
 
@@ -206,7 +206,7 @@ Wireframes
 Information about the wireframes created for the project, including the tools used and links to the wireframes.
 
 *   Balsamiq
-*   [Desktop]("#") [Mobile]("#") [Tablet]("#").
+*   [Desktop]("./documentation/wireframe.pdf") [Mobile]("./documentation/wireframe.pdf") [Tablet]("./documentation/wireframe.pdf").
 
 
 Project Documentation
@@ -217,49 +217,49 @@ Project Documentation
 
 Description: The Home page is the landing page of the application. It provides an overview of what the application is about and may include a navigation bar, introductory content, and links to other sections.
 
-![Home Page Image](path_to_home_page_image.jpg)
+![Home Page Image](./documentation/Landing_page.png)
 
 2\. Community Page (Our Mission)
 --------------------------------
 
 Description: This page outlines the mission and values of the community. It's a crucial part of the application to convey the purpose and ethos of the platform to the users.
 
-![Community Page Image](path_to_community_page_image.jpg)
+![Community Page Image](./documentation/community.png)
 
 3\. Registration Page
 ---------------------
 
 Description: The Registration page allows new users to create an account. It typically includes a form for entering user details like username, email, and password.
 
-![Registration Page Image](path_to_registration_page_image.jpg)
+![Registration Page Image](./documentation/registration.png)
 
 4\. Login Page
 --------------
 
 Description: The Login page enables existing users to access their accounts by entering their credentials.
 
-![Login Page Image](path_to_login_page_image.jpg)
+![Login Page Image](./documentation/login.png)
 
 5\. User Profile
 ----------------
 
 Description: The User Profile page displays user-specific information like their posts, followers, and personal details. It serves as a hub for each user's activity and settings.
 
-![User Profile Image](path_to_user_profile_image.jpg)
+![User Profile Image](./documentation/profile.png)
 
 6\. Article Creation and Management
 -----------------------------------
 
 Description: These features enable users to create, view, update, and delete articles. They form the core functionality of the application where users can interact with content.
 
-![Create Article Image](path_to_create_article_image.jpg) ![View Article Image](path_to_view_article_image.jpg) ![Update Article Image](path_to_update_article_image.jpg) ![Delete Article Image](path_to_delete_article_image.jpg)
+![Create Article Image](./documentation/create_article.png) ![View Article Image](./documentation/view_article.png) ![Update Article Image](./documentation/edit_article.png) ![Delete Article Image](./documentation/delete_article.png)
 
 7\. Additional Features
 -----------------------
 
 Description: Additional features like category management, tagging, and community interactions are integral to the application, providing users with a richer experience.
 
-![Categories Management Image](path_to_categories_management_image.jpg) ![Tagging System Image](path_to_tagging_system_image.jpg) ![Community Interactions Image](path_to_community_interactions_image.jpg)
+![Categories Management Image](./documentation/categories_management.png) ![Tagging System Image](./documentation/tags_management.png) 
 
 Components
 =======================
