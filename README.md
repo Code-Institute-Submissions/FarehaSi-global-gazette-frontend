@@ -7,7 +7,8 @@ The Global Gazette is committed to fostering a community where open and construc
 
 Our mission extends beyond mere communication; it is about building a foundation for stronger, more resilient global ties. It is about nurturing a place where memories are shared, where knowledge is exchanged, and where every voice can make an impact. Join us in our quest to keep the essence of community alive and vibrant, one story at a time.
 
-[![Global gazette](./documentation/mockup.jpg "Global gazette")](./documentation/mockup.jpg "Global gazette")
+![Mockup](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/0ea8ef5c-d3a5-4e29-9fc0-35d601afed27)
+
 
 Explore our platform, share your moments, and rediscover the world through the eyes of its citizens. This is Global Gazette – Where every story matters, and every voice counts.
 
@@ -123,6 +124,76 @@ The black font color exudes elegance and timelessness, emphasizing the reliabili
 The logo, elegantly designed with Montserrat typography, features a globe at its core. This globe symbolizes the platform's global identity and its mission to connect minds, cultures, and perspectives from every corner of the world.
 ### Layout & Composition
 The layouts are structured for a seamless reading experience with an intuitive infinite scroll. This feature allows readers to effortlessly explore a continuous flow of engaging articles and stories. Generous whitespace ensures a clutter-free interface, emphasizing content purity and simplicity, and enhancing overall readability.
+## Features
+### Home Page
+On the landing page, the user is introduced to the atmosphere of the website – clean and timeless. At the top, there's a header that features the logo and a navigation bar. Right below is the hero image accompanied by text that introduces the user to the purpose and content of the website.
+<br>
+<br>
+![Home Page](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/870a780c-85e9-4bb6-96af-588c930eb241)
+<br>
+<br>
+As the user scrolls down, they encounter a list of blog posts accompanied by pictures designed to encourage users to click on them and delve deeper into the content.
+<br>
+<br>
+![Home Scroll Down](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/e44bd0d9-5639-4cd7-bf3d-52f1558b0880)
+<br>
+### Sign Up & Sign In
+At the Sign Up page, users create an account with the site and are able to post their own content. By registering with the site, users can also interact with others by leaving comments and liking posts.
+<br>
+<br>
+![Sign Up](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/73c8c821-b03d-414f-ac14-7523ceed17e4)
+<br>
+<br>
+The Sign In page carries a similar layout.
+<br>
+<br>
+![Sign In](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/59afc52e-1cbb-495d-b92a-81aac616fc56)
+### My Profile Page
+When a user registers, they are directed towards their repective profile page. This page displays the individual users' credentials. Users can choose to upload their profile picture and add some information about themselves. As a logged in user, the navigation bar changesto include added functionality.
+<br>
+<br>
+![My Profile](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/1c768fa5-a9b1-45ee-8436-5e4e12691694)
+<br>
+<br>
+### Create New Post
+Here users can add posts.
+<br>
+<br>
+![Create New Article](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/7f8da23e-edec-4232-823d-708b796eb820)
+<br>
+<br>
+### My Posts
+Here users, find a list of posts they have written. Posts can be edited and deleted.
+<br>
+<br>
+![My Posts](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/3935b69c-a562-4165-818b-5f77c992c884)
+<br>
+<br>
+### Detailed Post
+When an article is opened, logged in users have the ability to like and comment on it.
+<br>
+<br>
+![Post Like](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/44593f8f-9ade-419a-b6da-4317492e53df)
+<br>
+<br>
+![Post Comment](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/b1f51f56-e851-48d6-91e1-51bede35d213)
+<br>
+<br>
+### Search Bar
+The search bar allows for users to view posts based on predefined categories, names of users, post titles and keywords.
+<br>
+<br>
+![Search](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/44bb6187-323a-4ca5-b77a-24152b3c2f6e)
+<br>
+<br>
+### Additional Features
+Users can follow other authors and keep track of their posts.
+<br>
+<br>
+![Follow Other Users](https://github.com/FarehaSi/global-gazette-frontend/assets/116716786/d2a74896-a048-4085-b7d1-1797e84a47da)
+<br>
+<br>
+
 
 Tasks
 =====
@@ -167,99 +238,6 @@ Outline of features and enhancements planned for future development iterations.
 *   Addition of emoji-picker in the comment section.
 *   Implementation of category badge display and active badge functionality.
 *   Feature to allow users to add media files in addition to images.
-
-Design
-======
-
-This section covers the design aspects of the frontend project, including color schemes, typography, imagery, and wireframes.
-
-Colors
-------
-
-The color scheme for the project is chosen with accessibility and aesthetic appeal in mind, suitable for all age groups.
-
-*   Brief description of the color palette.
-*   Explanation of the color choice rationale.
-*   Link or reference to the color palette source, if any.
-
-Typography
-----------
-
-Details about the font choices for the project, their sources, and the rationale behind their selection.
-
-*   Primary and secondary fonts used in the project.
-*   Usage of Google Fonts or any other font libraries.
-*   Considerations for readability and user experience.
-
-Imagery
--------
-
-Overview of the types of imagery used in the project, their sources, and the guidelines for their selection.
-
-*   Types of images used (e.g., icons, photographs).
-*   Sources of the images, such as stock photography sites.
-*   Guidelines or themes followed in selecting the imagery.
-
-Wireframes
-----------
-
-Information about the wireframes created for the project, including the tools used and links to the wireframes.
-
-*   Balsamiq
-*   [Desktop]("./documentation/wireframe.pdf") [Mobile]("./documentation/wireframe.pdf") [Tablet]("./documentation/wireframe.pdf").
-
-
-Project Documentation
-=====================
-
-1\. Home Page
--------------
-
-Description: The Home page is the landing page of the application. It provides an overview of what the application is about and may include a navigation bar, introductory content, and links to other sections.
-
-![Home Page Image](./documentation/Landing_page.png)
-
-2\. Community Page (Our Mission)
---------------------------------
-
-Description: This page outlines the mission and values of the community. It's a crucial part of the application to convey the purpose and ethos of the platform to the users.
-
-![Community Page Image](./documentation/community.png)
-
-3\. Registration Page
----------------------
-
-Description: The Registration page allows new users to create an account. It typically includes a form for entering user details like username, email, and password.
-
-![Registration Page Image](./documentation/registration.png)
-
-4\. Login Page
---------------
-
-Description: The Login page enables existing users to access their accounts by entering their credentials.
-
-![Login Page Image](./documentation/login.png)
-
-5\. User Profile
-----------------
-
-Description: The User Profile page displays user-specific information like their posts, followers, and personal details. It serves as a hub for each user's activity and settings.
-
-![User Profile Image](./documentation/profile.png)
-
-6\. Article Creation and Management
------------------------------------
-
-Description: These features enable users to create, view, update, and delete articles. They form the core functionality of the application where users can interact with content.
-
-![Create Article Image](./documentation/create_article.png) ![View Article Image](./documentation/view_article.png) ![Update Article Image](./documentation/edit_article.png) ![Delete Article Image](./documentation/delete_article.png)
-
-7\. Additional Features
------------------------
-
-Description: Additional features like category management, tagging, and community interactions are integral to the application, providing users with a richer experience.
-
-![Categories Management Image](./documentation/categories_management.png) ![Tagging System Image](./documentation/tags_management.png) 
 
 Components
 =======================
@@ -699,21 +677,6 @@ Acknowledgment for external resources that were instrumental in the development 
 *   **Stack Overflow:** For being an invaluable resource for solving coding challenges and issues.
 *   **MDN Web Docs:** For providing comprehensive web documentation.
 
-Contributors
-------------
-
-Special thanks to the following individuals who have contributed significantly to the project:
-
-*   John Doe - For leading frontend development.
-*   Jane Smith - For contributions to backend development and database design.
-
-Acknowledgements
-----------------
-
-Additional acknowledgments:
-
-*   Thank you to the community on the \[Project's Forum/Community Page\] for feedback and suggestions.
-*   Special thanks to \[Mentor's/Advisor's Name\] for guidance and mentorship throughout the development process.
 
 Additional Resources
 --------------------
